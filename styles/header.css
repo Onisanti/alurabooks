@@ -11,6 +11,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 .container{
     display: flex;
@@ -18,4 +19,28 @@
 }
 .container__imagem{
     padding: 1em;
+}
+.lita-menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 60vw;
+}
+.container__botao:checked~.lita-menu{
+    display: block;
+}
+.lita-menu___titulo,
+.lita-menu___item{
+    padding: 1em;
+    background-color: white;
+}
+.lista-menu__titulo{
+    color: orange;
+}
+.lista-menu__link{
+    background: hwb(20 20 74);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
 }
